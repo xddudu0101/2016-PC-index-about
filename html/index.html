@@ -1,0 +1,749 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>才米公社</title>
+	<link rel="stylesheet" href="../css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="../css/index.css" media="all" />
+	<link rel="shortcut icon" type="text/css" href="../favicon.ico" />
+	<script type="text/javascript" src="../js/jquery-1.12.1.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.transit.js"></script>
+	<script type="text/javascript" src="../js/index.js"></script>
+	<script type="text/javascript" src="../js/jquery_slide.js"></script>
+</head>
+<body>
+<!-- 头部结构开始 -->
+<div class="header">
+	<div class="inHeader clearfix">
+		<div class="top_left">
+			<a href="index.html">
+				<img src="../images/logo.png" />
+			</a>
+		</div>
+		<div class="top_right">
+			<ul class="nav clearfix">
+				<li class="current">
+					<a href="#">首页</a>
+				</li>
+				<li>
+					<a href="#">关于我们</a>
+				</li>
+				<li>
+					<a href="#">联系我们</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- 头部结构结束 -->
+
+<!-- banner结构开始 -->
+<div class="banner">
+	<p>安全多一点   收益多一点   快乐多一点</p>
+	<span>才米公社为夸客金融旗下独立的互联网金融服务平台，致力于为互联网用户提供全方位的金融服务。</span>
+    <span>才米公社以理财服务为起点，倡导快乐金融的理念，为公社社员提供开心、贴心、安心的服务。</span>
+</div>
+<!-- banner结构结束 -->
+
+<!-- 回顶部结构开始 -->
+<div class="huojian">
+	<p>返回顶部</p>
+</div>
+<script type="text/javascript">
+	$(document).ready(function() {
+		//当浏览器的滚轮滚到一屏的高度，那么让这个火箭出现
+		var OneHeight=$(window).height();
+		var huojian=$('.huojian');
+
+		$(window).scroll(function(event) {
+
+			if($(window).scrollTop()>=OneHeight){
+				huojian.show();
+			}else{
+				huojian.hide();
+			};
+
+		});
+
+		huojian.click(function(event) {
+			$('html,body').stop().animate({
+				'scrollTop':0
+
+			}, 500);
+		});
+	});
+</script>
+<!-- 回顶部结构结束 -->
+
+<!-- code结构开始 -->
+<ul class="code">
+	<li>
+		<div class="inCode">
+			<img src="../images/download.png" height="128" width="129" />
+			<p>下载APP</p>
+		</div>
+	</li>
+	<li>
+		<div class="inCode">
+			<img src="../images/weixin.png" height="128" width="129" />
+			<p>关注微信</p>
+		</div>
+	</li>
+</ul>
+<!-- code结构结束 -->
+
+<!-- 关于我们结构开始 -->
+<div class="aboutUs clearfix">
+	<div class="about_left">
+		<h2>关于我们</h2>
+		<p>
+		才米公社所隶属的上海夸客金融信息服务有限公司，是一家专注于个人金融服务的互联网金融机构。公司高管团队主要来自中外资银行，专业能力备受机构信任，已经与信托、银行、券商、第三方支付、征信公司等专业机构建立了密切的合作关系。
+		</p>
+		<br />
+		<p>
+		凭借团队的专业和强大实力，公司获得资本市场认可，在产品尚未上线之际，即已获得美元基金领投的近千万美金A轮注资，成功引入包括戈壁合伙人有限公司在内的战略投资者。公司运营一年后，再次获得来自香港环球信贷集团(01669.HK)的B轮亿元注资。
+		</p>
+	</div>
+	<!-- <div class="about_right" id="about_right">
+		<ul id="oUl">
+			<li class="show0">
+				<img src="../images/3.png" >
+				<p>2016年1月15日，第二届夸客金融年会</p>
+			</li>
+			<li class="show1">
+				<img src="../images/2.png" >
+				<p>2016年1月28日，上海互联网金融行业协会秘书长王喆考察夸客金融</p>
+			</li>
+			<li class="show2">
+				<img src="../images/1.png" >
+				<p>2016年3月30日，上海经信委领导视察才米公社</p>
+			</li>
+			<li class="show3">
+				<img src="../images/5.png" >
+				<p>2014年12月13日，夸客金融荣获“最佳个人金融服务平台奖”</p>
+			</li>
+			<li class="show4">
+				<img src="../images/4.png" >
+				<p>2015年10月30日，员工拥抱日</p>
+			</li>
+		</ul>
+		<div class="leftBtn" id="leftBtn"></div>
+		<div class="rightBtn" id="rightBtn"></div>
+	</div> -->
+	<div class="container_image">
+		<a href="javascript:void(0)" tip="0" class="i_btn prev_L"></a>
+		<a href="javascript:void(0)" tip="1" class="i_btn next_R"></a>
+		<ul class="slide_img">
+			<li class="on">
+				<a href="javascript:void(0);"><img src="../images/1.png" /></a>
+				<!-- <div class="icon"></div> -->
+				<!-- <div class="bg"></div> -->
+				<!-- <div class="info">
+					<p>2014年12月13日，夸客金融荣获“最佳个人金融服务平台奖”</p>
+				</div> -->
+			</li>
+			<li>
+				<a href="javascript:void(0)"><img src="../images/2.png" /></a>
+				<!-- <div class="icon"></div>
+				<div class="bg"></div> -->
+				<!-- <div class="info">
+					<p>2015年10月30日，员工拥抱日</p>
+				</div> -->
+			</li>
+			<li>
+				<a href="javascript:void(0)"><img src="../images/3.png" /></a>
+				<!-- <div class="icon"></div>
+				<div class="bg"></div> -->
+				<!-- <div class="info">
+					<p>2016年1月15日，第二届夸客金融年会</p>
+				</div> -->
+			</li>
+			<li>
+				<a href="javascript:void(0)"><img src="../images/4.png" /></a>
+				<!-- <div class="icon"></div>
+				<div class="bg"></div> -->
+				<!-- <div class="info">
+					<p>2016年3月30日，上海经信委领导视察才米公社</p>
+				</div> -->
+			</li>
+			<li>
+				<a href="javascript:void(0)"><img src="../images/5.png" /></a>
+				<!-- <div class="icon"></div>
+				<div class="bg"></div> -->
+				<!-- <div class="info">
+					<p>2016年1月28日，上海互联网金融行业协会秘书长王喆考察夸客金融</p>
+				</div> -->
+			</li>
+			
+			
+		</ul>
+		<div class="wenzi">
+			2016年3月30日，上海经信委领导视察才米公社
+		</div>
+		<div class="wenzi">
+			2016年1月28日，上海互联网金融行业协会秘书长王喆考察夸客金融
+		</div>
+		<div class="wenzi">
+			2016年1月15日，第二届夸客金融年会
+		</div>
+		<div class="wenzi">
+			2015年10月30日，员工拥抱日
+		</div>
+		<div class="wenzi">
+			2014年12月13日，夸客金融荣获“最佳个人金融服务平台奖”
+		</div>
+	</div>
+</div>
+
+<!-- <script type="text/javascript">
+		window.onload=function(){
+
+			// "关于我们"的轮播图切换效果 
+			var oLi=$('#oUl li'),
+				leftBtn=document.getElementById('leftBtn');
+				rightBtn=document.getElementById('rightBtn');
+				arr=['show0','show1','show2','show3','show4'],
+				len=oLi.length,
+				flag=true;
+			var timer;
+			var about_right=document.getElementById('about_right');
+
+			function nextFn(){
+				if(flag){
+					flag=false;
+					// 取出数组的第一位
+					var first=arr.shift();
+					//　将取出来的第一位存到数组的最后一位
+					arr.push(first);
+					// 重新分配类名 现在的类名是show1 show2 show3 show4 show0,然后每次点击，都会跟着换
+					for (var i = 0; i < len; i++) {
+						oLi[i].className=arr[i];
+						// oLi[i].children('p').show();
+						// oLi[i].siblings('li').children('p').hide();
+					};
+
+					setTimeout(function(){
+						flag=true;
+					}, 1000);
+				}
+			}
+			rightBtn.onclick=function(){
+				if(flag){
+					flag=false;
+					// 取出数组的第一位
+					var first=arr.shift();
+					//　将取出来的第一位存到数组的最后一位
+					arr.push(first);
+					// 重新分配类名 现在的类名是show1 show2 show3 show4 show0,然后每次点击，都会跟着换
+					for (var i = 0; i < len; i++) {
+						oLi[i].className=arr[i];
+						// oLi[i].children('p').show();
+						// oLi[i].siblings('li').children('p').hide();
+					};
+
+					setTimeout(function(){
+						flag=true;
+					}, 1000);
+				}
+				
+			};
+
+			//自动播放：
+			timer=setInterval(nextFn,1500);
+
+			//鼠标悬停：
+			about_right.onmouseenter=function() {
+				clearInterval(timer);
+			}
+			about_right.onmouseleave=function(){
+				clearInterval(timer);
+				timer=setInterval(nextFn,1000);
+			};
+
+			leftBtn.onclick=function(){
+				if(flag){
+					flag=false;
+					var last=arr.pop();
+					arr.unshift(last);
+					for (var i = 0; i < len; i++) {
+						oLi[i].className=arr[i];
+					};
+					setTimeout(function(){
+						flag=true;
+					}, 1000)
+				}
+				
+			};
+		};
+</script> -->
+
+<script type="text/javascript">
+$(function(){
+
+	var newopt={
+		
+	};
+	
+	i_slide($(".container_image"),newopt);
+	
+});
+</script>
+<!-- 关于我们结构结束 -->
+
+<!-- 安全多一点结构开始 -->
+<div class="safety_bf clearfix">
+    <div class="safety clearfix">
+
+        <div class="safety_left">
+            <div class="circle cl_w1">
+                <div class="circle cl_w2">
+                    <div class="circle cl_w3">
+                        <div class="circle cl_w4">
+                            <div class="cl_item">
+                                <img src="../images/quark0.png">
+                                <div class="cl_detail active">
+                                    <div class="cl_item_logo">
+                                        <img src="../images/quark00.png">
+                                    </div>
+                                    <div class="cl_item_line">
+
+                                    </div>
+                                    <div class="cl_item_detail">
+                                        公司拥有行业内顶尖的风险管理<br/>
+                                        团队,负责风险管理的<br/>
+                                        高管均有近20年的中外资<br/>
+                                        银行从业经验,拥有丰富<br/>
+                                        的风险管理经验<br/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cl_item">
+                                <img src="../images/quark1.png">
+                                <div class="cl_detail">
+                                    <div class="cl_item_logo">
+                                        <img src="../images/quark11.png">
+                                    </div>
+                                    <div class="cl_item_line">
+
+                                    </div>
+                                    <div class="cl_item_detail">
+                                        才米公社全程不接触客户资金，实<br/>
+                                        现投资人与借款人之间“点对点”<br/>
+                                        的现金流动，实现第三方对<br/>
+                                        资金流向的监管，全程保<br/>
+                                        障用户资金安全。<br/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cl_item">
+                                <img src="../images/quark2.png" height="95" width="95">
+                                <div class="cl_detail">
+                                    <div class="cl_item_logo">
+                                        <img src="../images/quark22.png">
+                                    </div>
+                                    <div class="cl_item_line">
+
+                                    </div>
+                                    <div class="cl_item_detail">
+                                        PICC（中国人保）为才米公社客户<br/>
+                                        账户资金安全提供保障。若平台用<br/>
+                                        户在投资、回款等交易环节中资金<br/>
+                                        被他人盗转，以此带来的损失将<br/>
+                                        由中国人保按约向被保<br/>
+                                        险人承担赔偿责任。<br />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cl_item">
+                                <img src="../images/quark3.png">
+                                <div class="cl_detail">
+                                    <div class="cl_item_logo">
+                                        <img src="../images/quark33.png">
+                                    </div>
+                                    <div class="cl_item_line">
+
+                                    </div>
+                                    <div class="cl_item_detail">
+                                        平台引入全球四大会计事务<br/>
+                                        所之一的安永，进行外部审<br/>
+                                        计，通过外部监督令平台业<br/>
+                                        务做到全面合规。<br/>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="cl_item">
+                                <img src="../images/quark4.png">
+                                <div class="cl_detail">
+                                    <div class="cl_item_logo tebie">
+                                        <img src="../images/quark44.png">
+                                    </div>
+                                    <div class="cl_item_line">
+
+                                    </div>
+                                    <div class="cl_item_detail">
+                                        2016年1月，公司荣获上海<br/>
+                                        市互联网金融行业协会<br/>
+                                        会员资格，并被选举为<br/>
+                                        理事单位。<br/>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="cl_item">
+                                <img src="../images/quark5.png">
+                                <div class="cl_detail">
+                                    <div class="cl_item_logo tebie2">
+                                        <img src="../images/quark55.png">
+                                    </div>
+                                    <div class="cl_item_line">
+
+                                    </div>
+                                    <div class="cl_item_detail">
+                                        平台成立之初与招商银行合作设置<br/>
+                                        逾期风险补偿金托管账户，借款客<br/>
+                                        户的每一笔借款均会直接向逾期<br/>
+                                        风险补偿金账户缴纳相应的<br/>
+                                        保证金，确保出借用户的<br/>
+                                        本息安全。<br />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="safety_right">
+        	<h2><img src="../images/dian.png">安全多一点</h2>
+            <ul>
+            	<li></li>
+                <li class="active">顶级风控团队</li>
+                <li>恒丰银行资金存管</li>
+                <li>PICC确保账户安全</li>
+                <li>安永外部审计</li>
+                <li>上海市互联网金融行业协会理事单位</li>
+                <li>招商银行逾期风险补偿金</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+var isInit=false;
+    var initCl=function () {
+    	if(isInit)
+    	{
+    			return;
+    	}
+		isInit=true;
+        var item = $(".cl_item");
+        //计算item数量
+        var count = item.length;
+        var width = item.width();
+        var height = item.height();
+        var r = item.parent().width() / 2;
+        var deg = 360 / count;
+
+        for (var i = 0; i < count; i++) {
+            var s_x = r - (width / 2);
+            var s_y = r - (width / 2);
+            item.eq(i).css({translate: [s_x, s_y]});
+            s_y = s_y + Math.sin((i - 0.5) * deg * 0.01745329) * r;
+            s_x = s_x + Math.cos((i - 0.5) * deg * 0.01745329) * r;
+            var thisItem = item.eq(i);
+            thisItem.css({translate: [s_x, s_y]});
+        }
+        var currentItem = item.eq(0);
+	var k = 0;
+	var roate0 = 0;
+	var last = 0;
+	var init = 0;
+	
+        item.click(function () {
+var falg =0;
+            var index = $(this).index();
+	
+	 
+
+		var x = 0;
+		//alert(last);
+		//alert(index);
+		if (last == 0){
+			if(index > 3   && index < 6){
+				index = index - 6;
+				k--;
+			} 
+		}
+		if (last == 1){
+			if(index > 4 || index < 1)  {
+				if (index == 5){
+					k--;
+				}
+				index = index - 6;
+				
+
+
+
+			}
+		}
+		if (last == 2){
+			if(index > -1 && index < 2)  {
+				
+				index = index - 6;
+			}
+		}
+		if (last == 3){
+			if(index > 0&&index < 3)  {
+				
+				index = index - 6;
+			} else {
+				if (index == 3){
+					k++;
+				}	
+			}
+		}
+		if (last == 4){
+			if(index > 1 && index < 4	)  {
+				index = index - 6;
+			}else {
+				if (index == 0 || index ==1){
+					k++;
+				}	
+			}
+		}
+		if (last == 5){
+			if(index > 2 && index < 5	)  {
+				index = index 	- 6;
+			} else {
+				
+				if (index == 0 || index ==1  || index ==2){
+					k++;
+				}	
+			}
+		}
+	
+
+
+var roate = 0;
+
+
+if (index < 0 ){
+		
+		roate = 360 * k + (index+6) * deg;
+	   } else{
+
+	
+	roate = 360 * k + index * deg;
+
+} 
+
+   	
+
+	roate0  = roate;
+	
+            $(this).parent().css({rotate: 0 - roate + "deg"}, 1000);
+           item.css({rotate: roate}, 1000);
+            currentItem = $(this);
+
+            $(".safety_right li").removeClass("active").eq(index + 1).addClass("active");
+            $(".cl_detail").removeClass("active");
+            $(this).find(".cl_detail").addClass("active");
+
+last = index;
+if (last < 0){
+
+	last = 6+last;
+}
+        });
+        $(".safety_right").find("li").click(function () {
+            var index = $(this).index();
+            item.eq(index - 1).click();
+        });
+
+
+    };
+
+
+(function () {
+
+        var top1 = $(".safety_bf").offset().top - $(window).height()+500;
+        $(document).scroll(function () {
+            var top = $(document).scrollTop();
+            if (top > top1) {
+              initCl();
+             
+            }
+        });
+    })();
+</script>
+<!-- 安全多一点结构结束 -->
+
+<!-- 收益多一点结构开始 -->
+<div class="income_bg_box">
+<div class="income_bg clearfix">
+    <div class="income clearfix">
+        <div class="income_text">
+            <h2>收益多一点</h2>
+            <div>
+                <h3>猜多宝</h3>
+                <p>娱乐,理财两不误,更有年化14.5收益等你来挑战</p>
+                <h3>加油赚</h3>
+                <p>车主专享理财产品,既能享收益又能得油费</p>
+                <h3>月月续投</h3>
+                <p>收益每月递增,复利投资,自由退续</p>
+                <h3>财富优加计划</h3>
+                <p>让你享受躺着不动也能赚钱的生活</p>
+            </div>
+        </div>
+        <div class="income_pic1">
+            <img src="../images/caiduobao1.png" alt=""/>
+            <img src="../images/caiduobao2.png" alt=""/>
+            <img src="../images/caiduobao3.png" alt=""/>
+        </div>
+        <div class="income_pic2">
+            <img src="../images/youfei1.png" alt=""/>
+            <img src="../images/youfei2.png" alt=""/>
+            <img src="../images/youfei3.png" alt=""/>
+        </div>
+    </div>
+
+</div>
+</div>
+<script type="text/javascript">
+    (function () {
+
+        var top1 = $(".income_pic1").offset().top - $(window).height();
+        var top2 = $(".income_pic2").offset().top - $(window).height();
+        $(document).scroll(function () {
+            var top = $(document).scrollTop();
+            if (top > top1) {
+                $(".income_pic1").addClass("active");
+                $(".income_pic2").addClass("active");
+            }
+        });
+    })();
+</script>
+<!-- 收益多一点结构结束 -->
+
+<!-- 活动activity结构开始 -->
+<div class="activity">
+	<div class="hongbao">
+		
+			<img src="../images/hongbao.png" height="286" width="332" alt="" />
+		
+		<!-- <div class="workimglist">
+            <p>新春吉利红包活动</p>
+            <br />
+            <span>买就送新春大礼包</span>
+            <span>人人有奖各个有份</span>
+        </div> -->
+	</div>
+	<div class="nianzhong">
+		
+			<img src="../images/nianzhongjiang.png" height="327" width="332" alt="" />
+		
+		<!-- <div class="workimglist">
+            <p>新春吉利红包活动</p>
+            <br />
+            <span>买就送新春大礼包</span>
+            <span>人人有奖各个有份</span>
+        </div> -->
+	</div>
+	<div class="qingren">
+		
+			<img src="../images/qingrenjie.png" height="288" width="332" alt="" />
+		
+		<!-- <div class="workimglist">
+            <p>新春吉利红包活动</p>
+            <br />
+            <span>买就送新春大礼包</span>
+            <span>人人有奖各个有份</span>
+        </div> -->
+	</div>
+	<div class="yiyuanqian">
+		
+			<img src="../images/yiyuanqian.png" height="299" width="332" alt="" />
+		
+		<!-- <div class="workimglist">
+            <p>新春吉利红包活动</p>
+            <br />
+            <span>买就送新春大礼包</span>
+            <span>人人有奖各个有份</span>
+        </div> -->
+	</div>
+	<div class="yaohaoyou">
+		
+			<img src="../images/yaohaoyou.png" height="299" width="357" alt="" />
+		
+		<!-- <div class="workimglist">
+            <p>新春吉利红包活动</p>
+            <br />
+            <span>买就送新春大礼包</span>
+            <span>人人有奖各个有份</span>
+        </div> -->
+	</div>
+	<div class="intro">
+		<h2>快乐多一点</h2>
+		<p>
+		   各种活动等你来参加
+		   还有壕礼大奖等你拿
+		   让你的生活快乐无限
+		</p>
+	</div>
+</div>
+<!-- 活动activity结构结束 -->
+
+<!-- 底部footer结构开始 -->
+<div class="footer">
+	<div class="inFooter clearfix">
+		<div class="footer_left">
+			<ul class="footerlist clearfix">
+				<li>
+					<a href="#">公司介绍</a>
+				</li>
+				<li> | </li>
+				<li>
+					<a href="#">风险管理</a>
+				</li>
+				<li> | </li>
+				<li>
+					<a href="#">条款申明</a>
+				</li>
+				<li> | </li>
+				<li>
+					<a href="#">媒体报道</a>
+				</li>
+				<li> | </li>
+				<li>
+					<a href="#">帮助中心</a>
+				</li>
+				<li> | </li>
+				<li>
+					<a href="#">联系我们</a>
+				</li>
+				<li> | </li>
+				<li>
+					<a href="#">关于我们</a>
+				</li> 
+			</ul>
+			<p>
+			上海夸客金融信息服务有限公司：上海市鲁班路558号经纬国际大厦11楼（联系电话：021-53685083）
+			Copyright©2014-2016 www.caimigs.com All rights reserved 沪ICP备14052666号-2</p>
+		</div>
+		<div class="footer_right clearfix">
+			<div class="lianxiimg">
+				<i></i>
+				<em></em>
+			</div>
+			<div class="lianxi">
+				<strong>联系我们<span>(8:30-18:30)</span></strong>
+				<p>400-680-0388</p>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- 底部footer结构结束 -->
+</body>	
+</html>
